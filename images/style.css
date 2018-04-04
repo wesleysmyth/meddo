@@ -1,0 +1,556 @@
+@font-face {
+    font-family: 'RealMadrid2009';
+    src: url('./fonts/realmadrid/realmadrid2009-webfont.eot');
+    src: url('./fonts/realmadrid/realmadrid2009-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/realmadrid/realmadrid2009-webfont.woff2') format('woff2'),
+         url('./fonts/realmadrid/realmadrid2009-webfont.woff') format('woff'),
+         url('./fonts/realmadrid/realmadrid2009-webfont.ttf') format('truetype'),
+         url('./fonts/realmadrid/realmadrid2009-webfont.svg#realmadrid2009regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic-Light';
+    src: url('./fonts/tradegothic/trade-gothic-no-18-condensed-1361519964.eot');
+    src: url('./fonts/tradegothic/trade-gothic-no-18-condensed-1361519964.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/tradegothic/trade-gothic-no-18-condensed-1361519964.woff') format('woff'),
+         url('./fonts/tradegothic/trade-gothic-no-18-condensed-1361519964.ttf') format('truetype'),
+         url('./fonts/tradegothic/trade-gothic-no-18-condensed-1361519964.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* UNIVERSAL styles */
+
+body {
+    font-family: 'TradeGothic-Light','Arial Narrow';
+}
+
+.navbar-inverse {
+    height: 45px;
+}
+
+h3.sub-title {
+    font-family: 'Helvetica Neue', 'RealMadrid2009', 'Arial Narrow', 'Helvetica Neue', Arial, 'san serif';
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 32px;
+  }
+
+span.bold {
+    font-family: 'Helvetica Neue', 'RealMadrid2009', 'Arial Narrow', 'Helvetica Neue', Arial, 'san serif';
+    font-weight: 100;
+    font-size: 1.8em;
+    line-height: 0;
+}
+
+span.bold:hover {
+    font-style:italic;
+}
+
+
+/*** For all SECTIONS ***/
+
+.section-container {
+    max-width: 83%;
+    margin: 0 auto;
+}
+
+
+.section-container-about {
+    width: 100%;
+    margin: 0 auto;
+}
+
+span.about-sub-title {
+    margin-left: 6%;
+}
+
+
+
+
+
+.section-container p {
+    letter-spacing: 0.04em;
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-family:"RealMadrid2009", "Roboto Slab", serif;
+    font-size: 30px;
+}
+
+section.module p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+section.module p:last-child {
+    margin-bottom: 0;
+}
+
+section.module.parallax {
+    /*height: 600px;*/ /********* edited 6/23/2016 */
+    height: 83vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax.services {
+    height: 68vh;
+}
+
+section.module.parallax h1{
+    font-family:"RealMadrid2009", "Roboto Slab", serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 48px;
+    margin-bottom: 0;
+    padding-top: 200px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section.module.parallax h3 {
+  	text-align: center;
+}
+
+section.module.parallax-1 {
+    background-image: url("images/pexels-photo-68722.jpeg");
+}
+
+/*.parallax-2 {
+    background-image: url("images/pexels-photo-68724.jpeg");
+}*/
+section.module.parallax-2{
+    background-image: url("images/blackwhite.jpeg");
+}
+
+
+section.module.parallax-3 {
+    background-image: url("images/pexels-photo-68725.jpeg");
+}
+
+
+/*** ABOUT SECTION ***/
+
+#about {
+    font: 100% / 1.5 Arial;
+}
+
+p.about-text {
+    font-size: 40px !important;
+    font-family: 'TradeGothic-Light','Arial Narrow';
+}
+
+section.module .inside-process h2 {
+    margin-bottom: 6px;
+}
+
+
+/**** SERVICES SECTION ****/
+
+.services h2 {
+    text-align: center;
+ }
+
+.services div.col-md-4, .services div.col-xs-4 {
+    font-size: 1.4em;
+    background-color: rgba(255,255,255,0.5);
+    margin: 2px;
+    font-family: 'Helvetica Neue', 'RealMadrid2009', 'Arial Narrow', 'Helvetica Neue', Arial, 'san serif';
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.col-xs-6 {
+    width: 49%;
+}
+
+.section-container.services {
+   padding-top: 10%;
+}
+
+img.icon  {
+    width: 10%;
+    margin-left: -10px;
+}
+
+/*** SELECTED WORK SECTION ***/
+
+.section-container.work {
+    padding: 40px 0;
+}
+
+
+.thumbnail {
+	 position: relative;
+}
+
+div.thumbnail:hover {
+    opacity: 0.6;
+    color:#000;
+}
+
+.blurb {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 41%;
+    font-family: 'Helvetica Neue', 'Arial Narrow', Arial, 'san serif', "Roboto Slab", "RealMadrid2009", serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #000;
+    z-index: 1000;
+    font-size: 2em;
+    opacity:0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+/* show text on hover */
+.blurb:hover {
+    opacity: 1;
+}
+
+/*** OUR PROCESS SECTION ***/
+
+.section-container.process {
+    /*padding-top: 9%;*/ /****************** edited 6/23/2016 */
+    padding: 12% 0 9% 0;
+}
+
+.inside-process {
+    padding: 30px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+/*** CONTACT SECTION ***/ 
+
+.glyphicons img {
+    width: 53px;
+}
+
+.contact input {
+    width:100%;
+    padding: 1%;
+    margin: 1% 0 1% 0;
+}
+
+input.message {
+    height: 130px;
+}
+
+section.module.content.contact .col-md-12 {
+    padding-bottom: 50px;
+}
+
+/*** FOOTER SECTION ***/
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.top img {
+    width: 30px;
+    margin: 0 20px 8px 0;
+    float: right;
+}
+
+
+
+/**** MEDIA QUERIES ****/
+
+
+/*** Larger than iPad horizontal **/
+
+@media all and (min-width: 1025px) {
+    section.module.parallax h1 {
+        font-size: 100px;
+    }
+    .grow { 
+        transition: all .2s ease-in-out; 
+    }
+  
+    .grow:hover {
+        transform: scale(1.1); 
+     }
+
+    .services div.col-md-4:hover, .services div.col-xs-4:hover{
+        color: red;
+        letter-spacing: 3px;
+        font-size: 1.3;
+    }
+
+    /* K-PARALAX STYLES */   
+    .section-container .about {
+        width:1200px !important;
+    }
+
+    .k-parallax {
+        /*height: 100vh; */ /*************** edited 6/23/2016 */
+        height: 87vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-perspective: 1px;
+        perspective: 1px;
+    }
+
+    .k-parallax__layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .k-parallax__layer--base {
+         -webkit-transform: translateZ(0);
+         transform: translateZ(0);
+    }
+
+    .k-parallax__layer--back {
+        -webkit-transform: translateZ(-1px);
+        transform: translateZ(-1px);
+    }
+
+    .k-parallax {
+        font-size: 200%;
+    }
+
+     /* add padding to force scrollbars */
+    .k-parallax__layer {
+        /*padding: 100vh 0; */ /*********** editet 6/23/2016 */
+        padding: 70vh 0;
+
+    }
+
+    /* background image logo behind about text */
+    .background-para {
+        background-image: url('images/logo.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+    }
+}
+
+
+
+
+
+/* Smaller than iPad horizontal */
+
+@media all and (max-width: 1024px) {
+
+    p.about-text {
+        font-size: 23px !important;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    span.about-sub-title {
+        display: none;
+    }
+    
+    h2.h2-title {
+        text-align: center;
+    }
+
+    p.about-text {
+        text-align: center;
+    }
+
+    .inside-process {
+        padding: 25px;
+        background-color: rgba(255,255,255,0.6);
+    }
+
+    .inside-process p {
+        margin-top: 20px;
+    }
+
+ /*   .services div.col-md-4, .services div.col-xs-4 {
+        font-size: 1.7em;
+    }*/
+}
+
+
+/* Larger than 992px */
+
+@media (min-width: 992px) {
+    .col-md-4, .col-xs-4 {
+        width: 30.33%;
+    }
+}
+
+/* Smaller than iPad vertical  */
+
+@media only screen and (max-device-width : 768px) {
+     
+     .section-container {
+        max-width: 83%;
+    }
+    
+    .section-container.process, .section-container.SERVICES {
+       max-width: 100%;
+    }
+
+    section.module h2 {
+       font-size: 30px;
+    }
+
+    section.module.parallax h1 {
+        padding-top: 130px;
+    }
+
+    h3.sub-title {
+        margin-bottom: 60px;
+        background-color: rgba(255,255,255,0.5);
+    }
+
+    section.module.parallax, section.module.parallax.services {
+        height: 100%;
+    }
+   
+    section.module.parallax {
+        background-attachment: inherit;
+    }
+
+    .row.services {
+        padding-bottom: 5%;
+    }
+
+    .col-md-4:last-child, .col-xs-6:last-child {
+       display: none;
+    }
+
+    .section-container.services {
+       padding-top: 4%;
+    }
+
+    section.module .inside-process h2 {
+       margin-bottom: 25px;
+    }   
+
+    .contact .col-md-5 {
+       margin-bottom: 40px;
+    }
+}
+
+/*** Larger than 600px  ***/
+
+@media all and (min-width: 600px) {
+    section.module h2 {
+        font-size: 42px;
+    }
+    
+    section.module p {
+        font-size: 20px;
+    }
+    
+    section.module.parallax h1   {
+        font-size: 96px;
+    }
+}
+
+
+@media all and (max-width: 600px) {
+
+    .services div.col-md-4, .services div.col-xs-4 {
+        font-size: 1.2em;
+    }
+
+    .section-container.process {
+        padding: 5% 0 5% 0;
+    }
+
+    section.module h2 {
+        font-size: 40px ;
+    }
+}
+
+
+
+/* Smaller than iPhone 5 landscape */
+@media only screen and (max-width : 568) {
+
+    .services div.col-md-4, .services div.col-xs-4 {
+        font-size: 1.2em !important;
+    }
+}
+
+
+@media all and (max-width: 520px) {
+
+    .services div.col-md-4, .services div.col-xs-4 {
+        font-size: 1.1em;
+    }
+
+    .col-xs-6 {
+       width: 46%;
+    }
+
+    .section-container.process {
+       padding: 7% 0 0 0;
+    }
+}
+
+
+@media all and (max-width: 460px) {
+
+    .section-container {
+        width: 100%;
+    }
+
+    section.module p {
+        font-size: 16px;
+    }
+  
+    .services div.col-md-4{
+        font-size: 0.9em;
+    }
+
+    .section-container.process {
+       padding: 0;
+    }
+}
+
+/* Smaller than Nexus 6P | iPhone 6 | iPhone 5 horizontal */
+@media all and (max-width: 435px) {
+    .col-xs-6 {
+        width: 100%;
+    }
+    
+    .services div.col-md-4 {
+        font-size: 1.4em;
+    }
+}
+
+
+
+
+/* Smaller than iPhone 5 vertical */
+@media only screen and (max-width : 320) {
+
+    section.module.parallax.services {
+        height: 100%;
+    }
+
+    section.module.parallax {
+        background-attachment: inherit;
+    }
+      
+}
+
